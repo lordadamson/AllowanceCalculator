@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity {
 
+    //this is just a test... allowance is calculated by dividing X money over Y days.
     private double allowance_d = 10;
 
     @Override
@@ -28,7 +29,7 @@ public class MainActivity extends ActionBarActivity {
                     allowanceText.setText(Double.toString(newAllowance) + " LE");
                 }
             }
-                
+
         );
 
     }
