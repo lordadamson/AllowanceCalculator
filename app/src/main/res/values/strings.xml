@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Allowance Calculator</string>
-
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
-    <string name="spend_button">I Spent money</string>
-</resources>
