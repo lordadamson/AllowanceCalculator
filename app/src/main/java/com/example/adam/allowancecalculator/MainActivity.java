@@ -28,6 +28,7 @@ public class MainActivity extends ActionBarActivity {
                     allowanceText.setText(Double.toString(newAllowance) + " LE");
                 }
             }
+                
         );
 
     }
