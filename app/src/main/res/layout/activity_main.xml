@@ -9,17 +9,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Today&apos;s Allowance"
+        android:text="فلوسك النهاردة"
         android:id="@+id/todayAllowance"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp" />
+        android:layout_marginTop="45dp"
+        android:textSize="55dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="23 LE"
+        android:text="23 جنيه"
         android:id="@+id/allowanceText"
         android:textSize="50dp"
         android:textIsSelectable="true"
@@ -30,23 +31,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Total Money"
+        android:text="فلوسك كلها"
         android:id="@+id/totalMoneyText"
         android:layout_marginTop="48dp"
         android:layout_below="@+id/allowanceText"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textSize="45dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="342 LE"
+        android:text="342 جنيه"
         android:id="@+id/totalMoney"
         android:layout_below="@+id/totalMoneyText"
-        android:layout_toLeftOf="@+id/allowanceText"
-        android:layout_toStartOf="@+id/allowanceText"
-        android:layout_marginTop="16dp" />
+        android:layout_alignRight="@+id/totalMoneyText"
+        android:layout_alignEnd="@+id/totalMoneyText"
+        android:textSize="35dp" />
 
     <Button
         android:layout_width="wrap_content"

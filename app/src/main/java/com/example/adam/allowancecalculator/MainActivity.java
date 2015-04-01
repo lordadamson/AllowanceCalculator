@@ -26,7 +26,7 @@ public class MainActivity extends ActionBarActivity {
                 public void onClick(View v){
                     this.newAllowance -= 1;
                     TextView allowanceText = (TextView)findViewById(R.id.allowanceText);
-                    allowanceText.setText(Double.toString(newAllowance) + " LE");
+                    allowanceText.setText(Double.toString(newAllowance) + " جنيه");
                 }
             }
 
