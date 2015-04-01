@@ -14,4 +14,10 @@ whenever I spend money I tell the app.
 whenever I receive money I tell the app.
 whenever I spend more that I should, the app recalculates X/Y which makes my allowance less.
 
+I'd imagine it looks something like this:
+
+![Alt text](/readmephotos/image.png?raw=true "1")
+![Alt text](/readmephotos/image2.png?raw=true "2")
+![Alt text](/readmephotos/image3.png?raw=true "3")
+
 that's it.
