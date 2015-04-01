@@ -16,8 +16,8 @@ whenever I spend more that I should, the app recalculates X/Y which makes my all
 
 I'd imagine it looks something like this:
 
-![Alt text](/readmephotos/image.png?raw=true "1")
-![Alt text](/readmephotos/image2.png?raw=true "2")
-![Alt text](/readmephotos/image3.png?raw=true "3")
+![Alt text](/readmephotos/image.jpg?raw=true "1")
+![Alt text](/readmephotos/image2.jpg?raw=true "2")
+![Alt text](/readmephotos/image3.jpg?raw=true "3")
 
 that's it.
