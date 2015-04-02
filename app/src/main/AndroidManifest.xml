@@ -1,20 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.adam.allowancecalculator" >
+    package="com.example.manageyourmoney"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="20" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ManageMyMoney"
+            android:label="@string/title_activity_manage_my_money" >
+        </activity>
+        <activity
+            android:name=".First"
+            android:label="@string/title_activity_first" >
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:label="@string/title_activity_splash" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddAdditional"
+            android:label="@string/title_activity_add_additional" >
+        </activity>
+        <activity
+            android:name=".MoneyYouSpentToday"
+            android:label="@string/title_activity_money_you_spent_today" >
         </activity>
     </application>
 
