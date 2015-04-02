@@ -252,7 +252,7 @@ int id action_context_bar 0x7f09001d
 int id action_menu_divider 0x7f090001
 int id action_menu_presenter 0x7f090002
 int id action_mode_close_button 0x7f090024
-int id action_settings 0x7f09004c
+int id action_settings 0x7f09004e
 int id activity_chooser_view_content 0x7f090025
 int id always 0x7f090013
 int id beginning 0x7f09000f
@@ -296,6 +296,7 @@ int id search_plate 0x7f090036
 int id search_src_text 0x7f090037
 int id search_voice_btn 0x7f09003b
 int id separator 0x7f090049
+int id separator2 0x7f09004c
 int id shortcut 0x7f09002e
 int id showCustom 0x7f09000b
 int id showHome 0x7f09000c
@@ -303,6 +304,7 @@ int id showTitle 0x7f09000d
 int id split_action_bar 0x7f09001e
 int id submit_area 0x7f090039
 int id tabMode 0x7f090008
+int id textView 0x7f09004d
 int id textView1 0x7f09003c
 int id textView2 0x7f090041
 int id textView3 0x7f090046

@@ -46,10 +46,10 @@
         android:layout_height="wrap_content"
         android:text="فلوسك كلها"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="45dp"
-        android:layout_above="@+id/totalMoney"
+        android:textSize="35dp"
+        android:layout_below="@+id/separator"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="22dp" />
+        android:layout_marginTop="24dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -58,9 +58,29 @@
         android:text="123 جنيه"
         android:id="@+id/totalMoney"
         android:textSize="45dp"
-        android:layout_marginBottom="74dp"
+        android:layout_below="@+id/totalMoneyText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <View
+        android:id="@+id/separator2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/totalMoney"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="الفلوس هتقضي لمدة 7 أيام"
+        android:id="@+id/textView"
+        android:textSize="25dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
-<!-- From: file:/home/adam/Workspace/AndroidStudioProjects/ManageYourMoney/app/src/main/res/layout/activity_manage_my_money.xml -->
+<!-- From: file:/home/adam/Workspace/AndroidStudioProjects/AllowanceCalculator/app/src/main/res/layout/activity_manage_my_money.xml -->

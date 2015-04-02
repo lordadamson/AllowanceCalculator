@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/home/adam/Workspace/AndroidStudioProjects/ManageYourMoney/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/home/adam/Workspace/AndroidStudioProjects/AllowanceCalculator/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string-array name="Options">
         <item>Add additional money</item>
@@ -8,7 +8,7 @@
         <item>Money remaining today</item>
         <item>Tell me my Pocket money Today</item>
     </string-array>
-    <!-- From: file:/home/adam/Workspace/AndroidStudioProjects/ManageYourMoney/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
+    <!-- From: file:/home/adam/Workspace/AndroidStudioProjects/AllowanceCalculator/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="actionBarDivider"/>
     <attr format="reference" name="actionBarItemBackground"/>
@@ -115,11 +115,11 @@
     <dimen name="abc_panel_menu_list_width">296dp</dimen>
     <dimen name="abc_search_view_preferred_width">320dip</dimen>
     <dimen name="abc_search_view_text_min_width">160dip</dimen>
-    <!-- From: file:/home/adam/Workspace/AndroidStudioProjects/ManageYourMoney/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/home/adam/Workspace/AndroidStudioProjects/AllowanceCalculator/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/home/adam/Workspace/AndroidStudioProjects/ManageYourMoney/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
+    <!-- From: file:/home/adam/Workspace/AndroidStudioProjects/AllowanceCalculator/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
@@ -145,7 +145,7 @@
     <string name="abc_searchview_description_voice">Voice search</string>
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
-    <!-- From: file:/home/adam/Workspace/AndroidStudioProjects/ManageYourMoney/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/home/adam/Workspace/AndroidStudioProjects/AllowanceCalculator/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="app_name">"Manage Your Money "</string>
@@ -155,7 +155,7 @@
     <string name="title_activity_manage_my_money">ManageMyMoney</string>
     <string name="title_activity_money_you_spent_today">MoneyYouSpentToday</string>
     <string name="title_activity_splash">Splash</string>
-    <!-- From: file:/home/adam/Workspace/AndroidStudioProjects/ManageYourMoney/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/home/adam/Workspace/AndroidStudioProjects/AllowanceCalculator/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
         <!--
@@ -167,7 +167,7 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-    <!-- From: file:/home/adam/Workspace/AndroidStudioProjects/ManageYourMoney/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
+    <!-- From: file:/home/adam/Workspace/AndroidStudioProjects/AllowanceCalculator/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="TextAppearance.AppCompat.Base.CompactMenu.Dialog" parent="android:TextAppearance.Medium">
         <item name="android:textColor">@android:color/primary_text_light</item>

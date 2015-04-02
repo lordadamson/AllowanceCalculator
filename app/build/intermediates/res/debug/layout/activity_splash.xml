@@ -6,4 +6,4 @@
     tools:context="${relativePackage}.${activityClass}" >
 
 </RelativeLayout>
-<!-- From: file:/home/adam/Workspace/AndroidStudioProjects/ManageYourMoney/app/src/main/res/layout/activity_splash.xml -->
+<!-- From: file:/home/adam/Workspace/AndroidStudioProjects/AllowanceCalculator/app/src/main/res/layout/activity_splash.xml -->
