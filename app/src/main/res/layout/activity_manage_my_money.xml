@@ -31,6 +31,47 @@
         android:layout_below="@+id/todayMoneyText"
         android:layout_centerHorizontal="true" />
 
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/separator"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/totalMoneyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="فلوسك كلها"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="35dp"
+        android:layout_below="@+id/separator"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="123 جنيه"
+        android:id="@+id/totalMoney"
+        android:textSize="45dp"
+        android:layout_below="@+id/totalMoneyText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <View
+        android:id="@+id/separator2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/totalMoney"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp" />
+
     <SlidingDrawer
         android:layout_width="wrap_content"
         android:id="@+id/tookMoneyDrawer"
@@ -43,7 +84,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/slideHandleButton"
-            android:text="خدت فلوس"
+            android:text="خدت فلــوس"
             android:background="#c2ff90"></Button>
 
         <LinearLayout
@@ -66,7 +107,7 @@
         android:handle="@+id/spentMoneyHandle"
         android:content="@+id/spentMoneyLayout"
         android:layout_height="300dip"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="50dp"
         android:orientation="horizontal">
 
         <Button
@@ -101,47 +142,6 @@
         </LinearLayout>
 
     </SlidingDrawer>
-
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/darker_gray"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/separator" />
-
-    <TextView
-        android:id="@+id/totalMoneyText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="فلوسك كلها"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="35dp"
-        android:layout_below="@+id/separator"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="123 جنيه"
-        android:id="@+id/totalMoney"
-        android:textSize="45dp"
-        android:layout_below="@+id/totalMoneyText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp" />
-
-    <View
-        android:id="@+id/separator2"
-        android:layout_width="fill_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/darker_gray"
-        android:layout_below="@+id/totalMoney"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="24dp" />
 
     <TextView
         android:layout_width="wrap_content"
