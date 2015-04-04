@@ -20,6 +20,12 @@
         <activity
             android:name=".ManageMyMoney"
             android:label="@string/title_activity_manage_my_money" >
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
         </activity>
         <activity
             android:name=".First"
@@ -28,11 +34,6 @@
         <activity
             android:name=".Splash"
             android:label="@string/title_activity_splash" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".AddAdditional"

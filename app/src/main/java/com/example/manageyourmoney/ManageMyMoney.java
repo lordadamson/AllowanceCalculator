@@ -13,16 +13,16 @@ public class ManageMyMoney extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_manage_my_money);
-		TextView TYourMoney = (TextView) findViewById(R.id.textView2);
-		TextView TLeftDays =(TextView) findViewById(R.id.textView4); 
-		Bundle b = getIntent().getExtras();
-		String MyMoney= b.getString("TotalMoney");
-		String DayLeft =b.getString("N");
-		
-		TYourMoney.setText(MyMoney);
-		TLeftDays.setText(DayLeft);
-		
-	}
+        //TextView TYourMoney = (TextView) findViewById(R.id.textView2);
+        //TextView TLeftDays =(TextView) findViewById(R.id.textView4);
+//		Bundle b = getIntent().getExtras();
+//		String MyMoney = b.getString("TotalMoney");
+//		String DayLeft = b.getString("N");
+
+//		TYourMoney.setText(MyMoney);
+//		TLeftDays.setText(DayLeft);
+
+    }
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

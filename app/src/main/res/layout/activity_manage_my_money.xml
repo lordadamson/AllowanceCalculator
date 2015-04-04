@@ -31,10 +31,81 @@
         android:layout_below="@+id/todayMoneyText"
         android:layout_centerHorizontal="true" />
 
+    <SlidingDrawer
+        android:layout_width="wrap_content"
+        android:id="@+id/tookMoneyDrawer"
+        android:handle="@+id/slideHandleButton"
+        android:content="@+id/tookMoneyLayout"
+        android:layout_height="300dip"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/slideHandleButton"
+            android:text="خدت فلوس"
+            android:background="#c2ff90"></Button>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/tookMoneyLayout"
+            android:orientation="horizontal"
+            android:gravity="center|top"
+            android:padding="10dip"
+            android:background="#c2ff90"
+            android:layout_height="wrap_content">
+
+
+        </LinearLayout>
+
+    </SlidingDrawer>
+
+    <SlidingDrawer
+        android:layout_width="wrap_content"
+        android:id="@+id/spentMoneyDrawer"
+        android:handle="@+id/spentMoneyHandle"
+        android:content="@+id/spentMoneyLayout"
+        android:layout_height="300dip"
+        android:layout_marginTop="200dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spentMoneyHandle"
+            android:text="صرفت فلوس"
+            android:background="#eeb4b4"></Button>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/spentMoneyLayout"
+            android:orientation="horizontal"
+            android:gravity="center|top"
+            android:padding="10dip"
+            android:background="#eeb4b4"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/okayButton"
+                android:text="Okay"
+                android:background="#ffffff"></Button>
+
+            <EditText
+                android:id="@+id/email_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+
+        </LinearLayout>
+
+    </SlidingDrawer>
+
     <View
-    android:layout_width="fill_parent"
-    android:layout_height="1dp"
-    android:background="@android:color/darker_gray"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
