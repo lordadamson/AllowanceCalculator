@@ -1,21 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="app_name">"Manage Your Money "</string>
+    <string name="app_name">Pocket Hour Glass</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_manage_my_money">ManageMyMoney</string>
-
-    <string-array name="Options">
-        <item>Add additional money</item>
-        <item>Add money you spent today</item>
-        <item>Money remaining today</item>
-        <item>Tell me my Pocket money Today</item>
-    </string-array>
-
-    <string name="title_activity_first">First</string>
-    <string name="title_activity_splash">Splash</string>
-    <string name="title_activity_add_additional">AddAdditional</string>
-    <string name="title_activity_money_you_spent_today">MoneyYouSpentToday</string>
-
+    <string name="title_activity_new_comer">newComer</string>
+    <string name="action_newMoney">فلوس جديدة</string>string>
 </resources>
