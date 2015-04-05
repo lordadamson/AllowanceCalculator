@@ -10,8 +10,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.ImageButton;
+import android.widget.TextView;
 
+import java.util.Date;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 
@@ -19,6 +21,7 @@ public class newComer extends ActionBarActivity {
 
     Calendar Date;
     int year, month, month1, day;
+    String numberOfDays, totalMoney, endDateString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,14 +29,13 @@ public class newComer extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_comer);
         final EditText editTotalMoney = (EditText) findViewById(R.id.editText1);
-        final EditText StartDate = (EditText) findViewById(R.id.editText2);
-        final Button im1 = (Button) findViewById(R.id.fromDateButton);
-        final EditText EndDate = (EditText) findViewById(R.id.editText3);
+        final TextView EndDate = (TextView) findViewById(R.id.numberOfDaysView);
         final Button im2 = (Button) findViewById(R.id.toDateButton);
         final Button Save = (Button) findViewById(R.id.button1);
 
-        im1.setOnClickListener(new View.OnClickListener() {
+        totalMoney = editTotalMoney.getText().toString();
 
+        im2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
 
@@ -42,75 +44,57 @@ public class newComer extends ActionBarActivity {
                 year = Date.get(Calendar.YEAR);
                 month = Date.get(Calendar.MONTH);
 
+                //TODO: disable selection of days before today.
                 DatePickerDialog datepicker = new DatePickerDialog(newComer.this, new DatePickerDialog.OnDateSetListener() {
 
                     @Override
                     public void onDateSet(DatePicker view, int year, int monthOfYear,
                                           int dayOfMonth) {
-
-                        StartDate.setText(dayOfMonth + "/" + (monthOfYear + 1) + "/" + year);
-
-
+                        endDateString = dayOfMonth + "/" + (monthOfYear + 1) + "/" + year;
+                        numberOfDays = numberOfDays(endDateString);
+                        if (Integer.parseInt(numberOfDays) == 1)
+                            EndDate.setText("يوم واحد");
+                        else if (Integer.parseInt(numberOfDays) == 2)
+                            EndDate.setText("يومين");
+                        else if (Integer.parseInt(numberOfDays) >= 3 && Integer.parseInt(numberOfDays) <= 10)
+                            EndDate.setText(numberOfDays + " أيام");
+                        else if (Integer.parseInt(numberOfDays) >= 10)
+                            EndDate.setText(numberOfDays + " يوم");
                     }
                 }, year, month, day);
-
-                datepicker.show();
-
-
-            }
-        });
-        im2.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View arg0) {
-
-                Date = Calendar.getInstance();
-                day = Date.get(Calendar.DAY_OF_MONTH);
-                year = Date.get(Calendar.YEAR);
-                month1 = Date.get(Calendar.MONTH);
-
-                DatePickerDialog datepicker = new DatePickerDialog(newComer.this, new DatePickerDialog.OnDateSetListener() {
-
-                    @Override
-                    public void onDateSet(DatePicker view, int year, int monthOfYear,
-                                          int dayOfMonth) {
-                        EndDate.setText(dayOfMonth + "/" + (monthOfYear + 1) + "/" + year);
-
-                    }
-                }, year, month1, day);
                 datepicker.show();
             }
         });
 
 
         Save.setOnClickListener(new View.OnClickListener() {
-
-
             @Override
             public void onClick(View v) {
                 //code database here
-                String TotalMoney = editTotalMoney.getText().toString();
-
-                String Startdate = StartDate.getText().toString();
-                String[] Ssplited = Startdate.split("/");
-                String Enddate = EndDate.getText().toString();
-                String[] Esplited = Enddate.split("/");
-
-                int days = Integer.valueOf(Esplited[0]) - Integer.valueOf(Ssplited[0]);
-                int Month = Integer.valueOf(Esplited[1]) - Integer.valueOf(Ssplited[1]);
-                int Years = Integer.valueOf(Esplited[2]) - Integer.valueOf(Ssplited[2]);
-                String NumberOfDays = String.valueOf(days + 30 * Month + (Years * 365));
 
                 //Toast.makeText(getApplicationContext(), NumberOfDays +"", Toast.LENGTH_SHORT).show();
 
-                Intent intent = new Intent(getApplicationContext(), newComer.class);
-                intent.putExtra("TotalMoney", TotalMoney);
-                intent.putExtra("N", NumberOfDays).toString();
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                intent.putExtra("TotalMoney", totalMoney);
+                intent.putExtra("N", numberOfDays).toString();
                 //intent.putExtra("NumberOfDays", value)
                 startActivity(intent);
 
             }
         });
+    }
+
+    private String numberOfDays(String endDateString) {
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        String currentDateandTime = sdf.format(new Date());
+        String[] Ssplited = currentDateandTime.split("/");
+        String[] Esplited = endDateString.split("/");
+
+        int days = Integer.valueOf(Esplited[0]) - Integer.valueOf(Ssplited[0]);
+        int Month = Integer.valueOf(Esplited[1]) - Integer.valueOf(Ssplited[1]);
+        int Years = Integer.valueOf(Esplited[2]) - Integer.valueOf(Ssplited[2]);
+        String numberOfDays = String.valueOf(days + 30 * Month + (Years * 365));
+        return numberOfDays;
     }
 
     @Override
